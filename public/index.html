@@ -4,12 +4,411 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Bootstrap 5</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./css/app.css" />
   </head>
   <body>
-    <!--  -->
+    <div id="off-canvas-menu" class="position-fixed">
+      <button
+        class="btn btn-primary d-block d-xl-none"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample"
+      >
+        Button with data-bs-target
+      </button>
 
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body p-0">
+          <aside id="side-menu">
+            <div class="d-flex justify-content-center">
+              <div class="side-menu-content w-100">
+                <h1 class="text-white">Store.</h1>
+                <ul class="list-unstyled">
+                  <a href="#dashboard">
+                    <li class="p-2 active">Dashboard</li>
+                  </a>
+                  <a href="#"><li class="p-2">Live</li></a>
+                  <a href="#"><li class="p-2">Videos</li></a>
+                  <a href="#"><li class="p-2">Teams</li></a>
+                  <a href="#"><li class="p-2">Featured</li></a>
+                  <a href="#"><li class="p-2">Setting</li></a>
+                </ul>
+                <div class="upgrade-box w-100 p-4 text-center">
+                  <h3>Upgrade Version</h3>
+                  <div class="upgrade-text">
+                    <p>Upgrade now for game interest</p>
+                  </div>
+
+                  <button class="btn btn-light ps-3 pe-3">Upgrade Now</button>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+
+    <!--  -->
+    <aside id="side-menu" class="vh-100 position-fixed d-none d-xl-block">
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="side-menu-content w-100 pt-60">
+          <h1 class="text-white">Store.</h1>
+          <ul class="list-unstyled">
+            <a href="#dashboard">
+              <li class="p-2 active">
+                <img
+                  class="mr-1"
+                  src="./img/Dashboard.png"
+                  alt="dashboard-icon.png"
+                />Dashboard
+              </li>
+            </a>
+            <a href="#"
+              ><li class="p-2">
+                <img
+                  class="mr-1"
+                  src="./img/Live.png"
+                  alt="live-icon.png"
+                />Live
+              </li></a
+            >
+            <a href="#"
+              ><li class="p-2">
+                <img
+                  class="mr-1"
+                  src="./img/Videos.png"
+                  alt="videos-icon.png"
+                />Videos
+              </li></a
+            >
+            <a href="#"
+              ><li class="p-2">
+                <img
+                  class="mr-1"
+                  src="./img/Teams.png"
+                  alt="teams-icon.png"
+                />Teams
+              </li></a
+            >
+            <a href="#"
+              ><li class="p-2">
+                <img
+                  class="mr-1"
+                  src="./img/Featured.png"
+                  alt="featured-icon.png"
+                />Featured
+              </li></a
+            >
+            <a href="#"
+              ><li class="p-2">
+                <img
+                  class="mr-1"
+                  src="./img/Setting.png"
+                  alt="setting-icon.png"
+                />Setting
+              </li></a
+            >
+          </ul>
+          <div class="dummy-box-1 upgrade-box w-100 p-4 text-center">
+            <h3>Upgrade Version</h3>
+            <div class="upgrade-text">
+              <p>Upgrade now for game interest</p>
+            </div>
+
+            <button class="btn btn-light ps-3 pe-3">Upgrade Now</button>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <main id="dashboard" class="vh-100 p-xl-4 ms-auto">
+      <section id="widgets" data-simplebar="true">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="row">
+                <div
+                  class="
+                    profile-search
+                    d-flex
+                    justify-content-between
+                    align-items-center
+                  "
+                >
+                  <div class="profile-username h4 w-100 m-0">Hello User</div>
+                  <input
+                    class="w-100 p-2 rounded"
+                    type="text"
+                    placeholder="search..."
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xxl-12 w-100 h-100 cards mt-3">
+                  <div class="video-player w-100 h-100">this is video</div>
+                </div>
+
+                <div class="col-xxl-6 mt-3">
+                  <div class="card-games h-100 card-game-preview">
+                    <div class="card-content">
+                      <h4 class="card-head mb-2">Asssassin's Creed Vol.3</h4>
+                      <span>20k Playing &nbsp; 4k Love this game</span>
+                      <p class="card-description mt-2">
+                        Assassin's Creed is an action-adventure and stealth
+                        video game series created by Patrice Désilets...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xxl-6 mt-3">
+                  <div class="card-games h-100">
+                    <h4 class="card-head mb-2">PUBG MOBILE</h4>
+                    <span>1M Playing &nbsp; 321k Love this game</span>
+                    <p class="card-description mt-2">
+                      PUBG is a game with the battle royale genre, where players
+                      can play with 100 people online at once...
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-xxl-12 w-100 mt-3">
+                  <div
+                    class="
+                      notification-advancement
+                      d-flex
+                      justify-content-around
+                      align-items-center
+                      p-3
+                    "
+                  >
+                    <div class="logo"></div>
+                    <div>
+                      <div class="notif-title">
+                        Claim your Achievment Game for Benifits exclusive!
+                      </div>
+                      <div class="notif-subtitle">
+                        Increase your Account by using special features and
+                        promos from Achievment.
+                      </div>
+                    </div>
+                    <button class="btn btn-primary m-3 ps-3 pe-3">
+                      Claim Now
+                    </button>
+                    <button class="btn btn-outline-light border-0 m-3">
+                      X
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--  -->
+
+            <div class="col-md-4">
+              <div id="scroller" data-simplebar data-simplebar-auto-hide="true">
+                <div class="recent-games mt-4">
+                  <div class="d-flex justify-content-between">
+                    <div class="recent-games-head">Recent Games</div>
+                    <div>
+                      <a href="#"
+                        ><i class="fas fa-long-arrow-alt-right"></i
+                      ></a>
+                    </div>
+                  </div>
+
+                  <div class="list-games">
+                    <div class="game">
+                      <div
+                        class="
+                          d-flex
+                          justify-content-between
+                          align-items-center
+                        "
+                      >
+                        <div class="d-flex align-items-center">
+                          <img
+                            src="https://www.ladgeek.com/wp-content/uploads/2020/08/Fall-Guys-Ultimate-Knockout-PC-Version-Full-Game-Setup-Free-Download.jpg.webp"
+                            alt="Fall-Guys-Ultimate-Knockout-PC-Version-Full-Game-Setup-Free-Download.jpg.webp"
+                            class="game-preview"
+                          />
+                          <div class="game-info">
+                            <div class="game-title">Fall Guys Beta</div>
+                            <div class="version">Version 14.2</div>
+                          </div>
+                        </div>
+                        <a href="#">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="game">
+                      <div
+                        class="
+                          d-flex
+                          justify-content-between
+                          align-items-center
+                        "
+                      >
+                        <div class="d-flex align-items-center">
+                          <img
+                            src="https://tcf.wuki.com/game/16000/15926/320x320/slither-io.webp"
+                            alt="slither-io.webp"
+                            class="game-preview"
+                          />
+                          <div class="game-info">
+                            <div class="game-title">Slither.io</div>
+                            <div class="version">Version 11.21</div>
+                          </div>
+                        </div>
+                        <a href="#">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="game">
+                      <div
+                        class="
+                          d-flex
+                          justify-content-between
+                          align-items-center
+                        "
+                      >
+                        <div class="d-flex align-items-center">
+                          <img
+                            src="https://www.hebergementwebs.com/image/b8/b8e8a31bf26f2944552bc38c5781e078.webp/how-to-change-your-name-on-robloxhow-to-change-your-name-on-roblox-0.webp"
+                            alt="how-to-change-your-name-on-robloxhow-to-change-your-name-on-roblox-0.webp"
+                            class="game-preview"
+                          />
+                          <div class="game-info">
+                            <div class="game-title">Roblox</div>
+                            <div class="version">Version 1.12</div>
+                          </div>
+                        </div>
+                        <a href="#">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="game">
+                      <div
+                        class="
+                          d-flex
+                          justify-content-between
+                          align-items-center
+                        "
+                      >
+                        <div class="d-flex align-items-center">
+                          <img
+                            src="https://image.winudf.com/v2/image1/Y29tLm1hcnRpbm1hZ25pLm1la29yYW1hX3NjcmVlbl84XzE2MDQ5MTMyMzZfMDU3/screen-8.jpg?fakeurl=1&type=.jpg"
+                            alt="screen-8.jpg?fakeurl=1&type=.jpg"
+                            class="game-preview"
+                          />
+                          <div class="game-info">
+                            <div class="game-title">Mekorama</div>
+                            <div class="version">Version 1.7.2</div>
+                          </div>
+                        </div>
+                        <a href="#">
+                          <i class="fas fa-ellipsis-v"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="notification-menu mt-4">
+                  <div
+                    class="
+                      notification-menu-head
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                    "
+                  >
+                    <div class="h3 m-0">Notification</div>
+                    <a href="#" class="notif-view-all">View All</a>
+                  </div>
+
+                  <div class="notifications">
+                    <div class="notif d-flex justify-content-between">
+                      <div class="notif-description">
+                        <h4>Someone Wants to join</h4>
+                        <p class="time">5:32 pm, January 29</p>
+                      </div>
+                      <div
+                        class="
+                          kebab
+                          d-flex
+                          align-items-center
+                          justify-content-center
+                        "
+                      >
+                        <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+                      </div>
+                    </div>
+                    <button
+                      class="
+                        btn btn-primary
+                        pt-0
+                        pb-0
+                        ps-3
+                        pe-3
+                        rounded-pill
+                        mb-27
+                      "
+                    >
+                      Group
+                    </button>
+                    <div class="notif d-flex justify-content-between">
+                      <div class="notif-description">
+                        <h4>Force The Game</h4>
+                        <p class="time">2:11 pm, January 30</p>
+                      </div>
+                      <div
+                        class="
+                          kebab
+                          d-flex
+                          align-items-center
+                          justify-content-center
+                        "
+                      >
+                        <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+                      </div>
+                    </div>
+                    <button
+                      class="btn btn-secondary pt-0 pb-0 ps-3 pe-3 rounded-pill"
+                    >
+                      Update
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  -->
+    </main>
     <script src="./js/app.js"></script>
   </body>
 </html>

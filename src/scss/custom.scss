@@ -1,0 +1,256 @@
+body {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background: #18181d;
+  color: $light;
+}
+
+* a {
+  color: $light;
+  text-decoration: none;
+}
+
+.dummy-box {
+  width: 100%;
+  min-height: 240px;
+  border: 1px solid black;
+  background-color: aquamarine;
+}
+
+.dummy-box-1 {
+  width: 100%;
+  min-height: 50px;
+  border: 1px solid black;
+  background-color: rgb(161, 127, 255);
+}
+
+.offcanvas-backdrop::before {
+  z-index: 1;
+}
+
+.active {
+  background-color: #18181d;
+}
+
+#off-canvas-menu {
+  overflow-x: hidden;
+  z-index: 1;
+  .offcanvas {
+    background: #202026;
+  }
+
+  .offcanvas-start {
+    max-width: 295px;
+  }
+
+  .offcanvas-header {
+    z-index: 3;
+  }
+  .offcanvas-body {
+    z-index: 2;
+  }
+}
+
+#side-menu {
+  position: fixed;
+  width: 295px;
+  background: #202026;
+  overflow: auto;
+
+  a:hover {
+    color: #fff;
+  }
+  li:hover {
+    background: #18181d;
+  }
+}
+#dashboard {
+  width: 100vw;
+}
+@media screen and (min-width: 1200px) {
+  #dashboard {
+    width: calc(100vw - 295px);
+  }
+}
+
+#widgets {
+  height: 100%;
+}
+
+#scroller {
+  height: 100%;
+}
+
+.pt-60 {
+  padding-top: 60px;
+}
+
+.mb-27 {
+  margin-bottom: 27px;
+}
+
+.side-menu-content {
+  padding-left: 47px;
+}
+
+.upgrade-box {
+  background-color: #36363c;
+  max-width: 179px;
+  width: 100%;
+  border: none;
+  border-radius: 1rem;
+
+  h3 {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 13px;
+  }
+  .upgrade-text {
+    // max-width: 103px;
+    width: 100%;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 22px;
+  }
+
+  button {
+    font-size: 12px;
+    line-height: 12px;
+    border-radius: 1rem;
+    color: #0a043c;
+  }
+}
+
+.video-player {
+  min-height: 345px;
+  max-height: 345px;
+  background: #36363c;
+  border-radius: 1rem;
+  padding: 26px;
+}
+
+.cards {
+  background: #202026, 100%;
+  min-height: 50px;
+}
+
+.card-head {
+  margin-top: 120px;
+  font-size: 18px;
+}
+
+.card-games {
+  background: #36363c;
+  border-radius: 1rem;
+  padding: 26px;
+
+  span {
+    font-size: 12px;
+  }
+
+  .card-description {
+    font-size: 10px;
+  }
+
+  .card-game-preview {
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/2/29/Assassin%27s_Creed_III_Game_Cover.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+// Notification Advancement
+.notification-advancement {
+  border-radius: 1rem;
+  background: #202026;
+}
+
+.notif-title {
+  font-size: 14px;
+}
+
+.notif-subtitle {
+  font-size: 10px;
+}
+
+.logo {
+  background-image: url(../../public/img/logo.png);
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 70px;
+}
+
+//recent-games & notification menu
+.recent-games,
+.notification-menu,
+.game-preview {
+  background: #202026;
+  border-radius: 1rem;
+  padding: 30px;
+}
+
+.notification-menu-head {
+  margin-bottom: 48px;
+}
+
+.notif {
+  h4 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+  }
+
+  .time {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #9090a4;
+  }
+
+  .kebab {
+    background-color: #23232c;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+  }
+}
+
+.recent-games-head {
+  font-size: 18px;
+}
+
+.game {
+  margin-top: 30px;
+}
+
+.game-preview {
+  background: #36363c;
+  background-position: center;
+  background-repeat: repeat;
+  object-fit: cover;
+  border: none;
+  padding: 0;
+  width: 60px;
+  height: 60px;
+}
+
+.game-info {
+  margin-left: 9px;
+}
+
+.game-title {
+  font-size: 18px;
+}
+
+.notif-view-all,
+.version {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+  text-align: left;
+
+  color: #a0a0a0;
+}

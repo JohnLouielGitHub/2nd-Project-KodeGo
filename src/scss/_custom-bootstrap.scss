@@ -5,6 +5,30 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
+// First override some or all individual color variables
+$primary: #25408f;
+$secondary: #8f5325;
+$success: #3e8d63;
+$info: #13101c;
+$warning: #945707;
+$danger: #d62518;
+$light: #f8f9fa;
+$dark: #343a40;
+$maroon: rgb(112, 28, 28);
+
+// add any custom colors by creating your own map and merging with the (now-defined) $theme-colors map
+$theme-colors: (
+  "maroon": $maroon,
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+) !default;
+
 // scss-docs-start import-stack
 // Configuration
 @import "~bootstrap/scss/functions";
