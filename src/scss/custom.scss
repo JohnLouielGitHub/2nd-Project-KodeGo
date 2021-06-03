@@ -5,6 +5,11 @@ body {
   color: $light;
 }
 
+input {
+  outline: 0;
+  color: #fff;
+}
+
 * a {
   color: $light;
   text-decoration: none;
@@ -48,6 +53,11 @@ body {
   }
   .offcanvas-body {
     z-index: 2;
+  }
+  .off-canvas-burger {
+    position: absolute;
+    top: 60px;
+    left: 0;
   }
 }
 
@@ -94,6 +104,7 @@ body {
 }
 
 .upgrade-box {
+  margin-top: 75px;
   background-color: #36363c;
   max-width: 179px;
   width: 100%;
@@ -121,12 +132,24 @@ body {
   }
 }
 
+.search-bar-input {
+  border: 1px solid #2c2c2c;
+}
+
+.search-icon {
+  background-image: url(../../images/search-icon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 16px;
+  height: 16px;
+  right: 5% !important;
+}
+
 .video-player {
   min-height: 345px;
   max-height: 345px;
   background: #36363c;
   border-radius: 1rem;
-  padding: 26px;
 }
 
 .cards {
@@ -135,14 +158,30 @@ body {
 }
 
 .card-head {
-  margin-top: 120px;
   font-size: 18px;
 }
 
+.card-image-1 {
+  background-image: url(https://image.api.playstation.com/cdn/EP0001/CUSA11560_00/oErpzTMuDsXCGPqMbr11PTfTXhVSk8zX.png);
+  background-size: cover;
+  min-height: 255px;
+}
+
+.card-image-2 {
+  background-image: url(https://akm-img-a-in.tosshub.com/sites/btmt/images/stories/pub_660_190121023424.jpg);
+  background-size: cover;
+  min-height: 255px;
+}
+
+.card-content {
+  background-color: #36363c83;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
 .card-games {
-  background: #36363c;
+  background-color: #36363c;
   border-radius: 1rem;
-  padding: 26px;
 
   span {
     font-size: 12px;
@@ -151,18 +190,16 @@ body {
   .card-description {
     font-size: 10px;
   }
-
-  .card-game-preview {
-    background-image: url("https://upload.wikimedia.org/wikipedia/en/2/29/Assassin%27s_Creed_III_Game_Cover.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
 }
 
 // Notification Advancement
 .notification-advancement {
   border-radius: 1rem;
   background: #202026;
+
+  .btn {
+    font-size: 14px;
+  }
 }
 
 .notif-title {
@@ -176,8 +213,8 @@ body {
 .logo {
   background-image: url(../../public/img/logo.png);
   background-repeat: no-repeat;
-  width: 70px;
-  height: 70px;
+  width: 64px;
+  height: 68px;
 }
 
 //recent-games & notification menu
@@ -187,6 +224,11 @@ body {
   background: #202026;
   border-radius: 1rem;
   padding: 30px;
+}
+
+.claim-btn {
+  font-size: 12px;
+  line-height: 14px;
 }
 
 .notification-menu-head {

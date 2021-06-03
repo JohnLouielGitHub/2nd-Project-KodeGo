@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bootstrap 5</title>
+    <title>Game Dashboard</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -13,18 +13,8 @@
     />
     <link rel="stylesheet" href="./css/app.css" />
   </head>
-  <body>
+  <body class="vh-100">
     <div id="off-canvas-menu" class="position-fixed">
-      <button
-        class="btn btn-primary d-block d-xl-none"
-        type="button"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasExample"
-        aria-controls="offcanvasExample"
-      >
-        Button with data-bs-target
-      </button>
-
       <div
         class="offcanvas offcanvas-start"
         tabindex="-1"
@@ -71,82 +61,77 @@
 
     <!--  -->
     <aside id="side-menu" class="vh-100 position-fixed d-none d-xl-block">
-      <div class="d-flex justify-content-center align-items-center">
-        <div class="side-menu-content w-100 pt-60">
-          <h1 class="text-white">Store.</h1>
-          <ul class="list-unstyled">
-            <a href="#dashboard">
-              <li class="p-2 active">
-                <img
-                  class="mr-1"
-                  src="./img/Dashboard.png"
-                  alt="dashboard-icon.png"
-                />Dashboard
-              </li>
-            </a>
-            <a href="#"
-              ><li class="p-2">
-                <img
-                  class="mr-1"
-                  src="./img/Live.png"
-                  alt="live-icon.png"
-                />Live
-              </li></a
-            >
-            <a href="#"
-              ><li class="p-2">
-                <img
-                  class="mr-1"
-                  src="./img/Videos.png"
-                  alt="videos-icon.png"
-                />Videos
-              </li></a
-            >
-            <a href="#"
-              ><li class="p-2">
-                <img
-                  class="mr-1"
-                  src="./img/Teams.png"
-                  alt="teams-icon.png"
-                />Teams
-              </li></a
-            >
-            <a href="#"
-              ><li class="p-2">
-                <img
-                  class="mr-1"
-                  src="./img/Featured.png"
-                  alt="featured-icon.png"
-                />Featured
-              </li></a
-            >
-            <a href="#"
-              ><li class="p-2">
-                <img
-                  class="mr-1"
-                  src="./img/Setting.png"
-                  alt="setting-icon.png"
-                />Setting
-              </li></a
-            >
-          </ul>
-          <div class="dummy-box-1 upgrade-box w-100 p-4 text-center">
-            <h3>Upgrade Version</h3>
-            <div class="upgrade-text">
-              <p>Upgrade now for game interest</p>
-            </div>
-
-            <button class="btn btn-light ps-3 pe-3">Upgrade Now</button>
+      <div class="side-menu-content w-100 pt-60">
+        <h1 class="text-white">Store.</h1>
+        <ul class="list-unstyled">
+          <a href="#dashboard">
+            <li class="p-2 active">
+              <img
+                class="mr-1"
+                src="./img/Dashboard.png"
+                alt="dashboard-icon.png"
+              /><span>Dashboard</span>
+            </li>
+          </a>
+          <a href="#"
+            ><li class="p-2">
+              <img class="mr-1" src="./img/Live.png" alt="live-icon.png" />Live
+            </li></a
+          >
+          <a href="#"
+            ><li class="p-2">
+              <img
+                class="mr-1"
+                src="./img/Videos.png"
+                alt="videos-icon.png"
+              />Videos
+            </li></a
+          >
+          <a href="#"
+            ><li class="p-2">
+              <img
+                class="mr-1"
+                src="./img/Teams.png"
+                alt="teams-icon.png"
+              />Teams
+            </li></a
+          >
+          <a href="#"
+            ><li class="p-2">
+              <img
+                class="mr-1"
+                src="./img/Featured.png"
+                alt="featured-icon.png"
+              />Featured
+            </li></a
+          >
+          <a href="#"
+            ><li class="p-2">
+              <img
+                class="mr-1"
+                src="./img/Setting.png"
+                alt="setting-icon.png"
+              />Setting
+            </li></a
+          >
+        </ul>
+        <div class="upgrade-box w-100 p-4 text-center">
+          <h3>Upgrade Version</h3>
+          <div class="upgrade-text">
+            <p>Upgrade now for game interest</p>
           </div>
+
+          <button class="btn btn-light ps-3 pe-3">Upgrade Now</button>
         </div>
       </div>
     </aside>
 
-    <main id="dashboard" class="vh-100 p-xl-4 ms-auto">
+    <main id="dashboard" class="vh-100 pt-4 ps-4 ms-auto">
       <section id="widgets" data-simplebar="true">
         <div class="container-fluid">
           <div class="row">
             <div class="col-md-8">
+              <!--  -->
               <div class="row">
                 <div
                   class="
@@ -156,22 +141,83 @@
                     align-items-center
                   "
                 >
-                  <div class="profile-username h4 w-100 m-0">Hello User</div>
-                  <input
-                    class="w-100 p-2 rounded"
-                    type="text"
-                    placeholder="search..."
-                  />
+                  <button
+                    class="off-canvas-burger btn btn-primary d-block d-xl-none"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample"
+                    aria-controls="offcanvasExample"
+                  >
+                    <i
+                      class="fas fa-bars"
+                      data-bs-toggle="offcanvas"
+                      data-bs-target="#offcanvasExample"
+                      aria-controls="offcanvasExample"
+                    ></i>
+                  </button>
+
+                  <h2 class="profile-username h4 w-100 ms-3 mb-0 mt-0 m-xl-0">
+                    Hello X-travaganza !
+                  </h2>
+
+                  <div class="search-bar w-100 position-relative">
+                    <input
+                      class="
+                        search-bar-input
+                        w-100
+                        ps-4
+                        p-2
+                        rounded
+                        bg-secondary
+                      "
+                      type="text"
+                      placeholder="Search..."
+                    />
+                    <span
+                      class="
+                        search-icon
+                        position-absolute
+                        top-50
+                        translate-middle-y
+                      "
+                    ></span>
+                  </div>
                 </div>
               </div>
               <div class="row">
                 <div class="col-xxl-12 w-100 h-100 cards mt-3">
-                  <div class="video-player w-100 h-100">this is video</div>
+                  <div class="featured-game position-absolute">
+                    <h2>Company of Heroes 2</h2>
+                    <p>
+                      Company of Heroes 2 (COH2) is a real time strategy game
+                      focused on small unit tactics in WWII. The gameplay is
+                      based on squads of infantry and vehicles, plus some
+                      constructions like bunkers and artillery, with a
+                      continuous stream of resources instead of
+                      resource-gathering.
+                    </p>
+                  </div>
+                  <iframe
+                    class="video-player w-100 h-100"
+                    src="https://www.youtube.com/embed/BbIfOya35f0"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
                 </div>
-
-                <div class="col-xxl-6 mt-3">
-                  <div class="card-games h-100 card-game-preview">
-                    <div class="card-content">
+                <div class="col-sm-6 mt-3">
+                  <div
+                    class="
+                      card-games
+                      w-100
+                      h-100
+                      card-game-preview card-image-1
+                      d-flex
+                      align-items-end
+                    "
+                  >
+                    <div class="card-content w-100 rounded-bottom-3 p-3">
                       <h4 class="card-head mb-2">Asssassin's Creed Vol.3</h4>
                       <span>20k Playing &nbsp; 4k Love this game</span>
                       <p class="card-description mt-2">
@@ -181,28 +227,40 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xxl-6 mt-3">
-                  <div class="card-games h-100">
-                    <h4 class="card-head mb-2">PUBG MOBILE</h4>
-                    <span>1M Playing &nbsp; 321k Love this game</span>
-                    <p class="card-description mt-2">
-                      PUBG is a game with the battle royale genre, where players
-                      can play with 100 people online at once...
-                    </p>
-                  </div>
-                </div>
-
-                <div class="col-xxl-12 w-100 mt-3">
+                <div class="col-sm-6 mt-3">
                   <div
                     class="
-                      notification-advancement
+                      card-games
+                      w-100
+                      h-100
+                      card-game-preview card-image
                       d-flex
-                      justify-content-around
+                      align-items-end
+                      card-image-2
+                    "
+                  >
+                    <div class="card-content w-100 p-3">
+                      <h4 class="card-head mb-2">PUBG MOBILE</h4>
+                      <span>1M Playing &nbsp; 321k Love this game</span>
+                      <p class="card-description mt-2">
+                        PUBG is a game with the battle royale genre, where
+                        players can play with 100 people online at once...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 d-none d-md-block w-100 mt-3">
+                  <div
+                    class="
+                      d-none
+                      notification-advancement
+                      d-md-flex
+                      justify-content-between
                       align-items-center
                       p-3
                     "
                   >
-                    <div class="logo"></div>
+                    <span class="logo"></span>
                     <div>
                       <div class="notif-title">
                         Claim your Achievment Game for Benifits exclusive!
@@ -212,12 +270,14 @@
                         promos from Achievment.
                       </div>
                     </div>
-                    <button class="btn btn-primary m-3 ps-3 pe-3">
-                      Claim Now
-                    </button>
-                    <button class="btn btn-outline-light border-0 m-3">
-                      X
-                    </button>
+                    <div class="d-flex">
+                      <button class="claim-btn btn btn-primary ps-3 pe-3">
+                        Claim Now
+                      </button>
+                      <button class="btn btn-outline-light border-0">
+                        <i class="fas fa-times"></i>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -227,7 +287,7 @@
 
             <div class="col-md-4">
               <div id="scroller" data-simplebar data-simplebar-auto-hide="true">
-                <div class="recent-games mt-4">
+                <div class="recent-games mt-4 mt-md-0">
                   <div class="d-flex justify-content-between">
                     <div class="recent-games-head">Recent Games</div>
                     <div>
@@ -336,7 +396,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="notification-menu mt-4">
+                <div class="notification-menu mt-4 mb-4">
                   <div
                     class="
                       notification-menu-head
