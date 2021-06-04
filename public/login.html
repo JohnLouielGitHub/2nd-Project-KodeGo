@@ -79,5 +79,22 @@
     </main>
 
     <script src="../src/app.js"></script>
+    <script>
+      let email_add = document.getElementById("email-address");
+      let pass = document.getElementById("password");
+      let toDashboard = document.getElementById("submit");
+
+      toDashboard.addEventListener("click", (event) => {
+        if (email_add.value == "user" && pass.value == "user") {
+          console.log("confirmed");
+          alert("pasok sa dashboard dapat");
+          event.preventDefault();
+          console.log(window.location.href);
+          window.location.href = "index.html";
+        } else {
+          alert("wrong pass");
+        }
+      });
+    </script>
   </body>
 </html>
