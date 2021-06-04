@@ -15,6 +15,7 @@ $danger: #d62518;
 $light: #f8f9fa;
 $dark: #343a40;
 $maroon: rgb(112, 28, 28);
+$faded-blue: #64d7d7;
 
 // add any custom colors by creating your own map and merging with the (now-defined) $theme-colors map
 $theme-colors: (
@@ -27,6 +28,7 @@ $theme-colors: (
   "danger": $danger,
   "light": $light,
   "dark": $dark,
+  "fb": $faded-blue,
 ) !default;
 
 // scss-docs-start import-stack

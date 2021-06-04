@@ -175,7 +175,7 @@
       </div>
     </aside>
     <!-- side menu -->
-    <main id="dashboard" class="vh-100 pt-4 ps-4 ms-auto">
+    <main id="dashboard" class="vh-100 pt-4 ps-2 pe-2 pe-lg-0 ms-auto">
       <section id="widgets" data-simplebar="true">
         <div class="container-fluid">
           <div class="row">
@@ -234,34 +234,22 @@
                 </div>
               </div>
               <div class="row">
-                <div
-                  class="col-xxl-12 w-100 h-100 cards mt-3 position-relative"
-                >
-                  <div
-                    class="
-                      featured-game
-                      w-100
-                      h-auto
-                      col-sm-6
-                      p-3
-                      position-absolute
-                    "
-                  >
-                    <div class="fs-3">Company of Heroes 2</div>
-                    <div class="fs-14">
-                      Company of Heroes 2 (COH2) is a real time strategy game
-                      focused on small unit tactics in WWII. The gameplay is
-                      based on squads of infantry and vehicles, plus some
-                      constructions like bunkers and artillery, with a
-                      continuous stream of resources instead of
-                      resource-gathering.
+                <div class="col-xxl-12 w-100 h-100 cards mt-3">
+                  <div class="w-100 h-100 video">
+                    <iframe
+                      class="video-player w-100 h-100"
+                      src="https://www.youtube.com/embed/BbIfOya35f0?autoplay=1"
+                    >
+                    </iframe>
+                    <div class="featured-game w-100 p-2">
+                      <h1 class="featured-game-title">Company of Heroes 2</h1>
+                      <div class="featured-game-desc fs-6">
+                        Company of Heroes 2 is a real-time strategy video game
+                        developed by Relic Entertainment and published by Sega
+                        for Microsoft Windows, OS X, and Linux.
+                      </div>
                     </div>
                   </div>
-                  <iframe
-                    class="video-player w-100 h-100"
-                    src="https://www.youtube.com/embed/BbIfOya35f0?autoplay=1"
-                  >
-                  </iframe>
                 </div>
                 <div class="col-sm-6 mt-3">
                   <div
@@ -277,7 +265,7 @@
                     <div class="card-content w-100 rounded-bottom-3 p-3">
                       <h4 class="card-head mb-2">Asssassin's Creed Vol.3</h4>
                       <span>20k Playing &nbsp; 4k Love this game</span>
-                      <p class="card-description mt-2">
+                      <p class="card-description mt-2 fs-6">
                         Assassin's Creed is an action-adventure and stealth
                         video game series created by Patrice Désilets...
                       </p>
@@ -299,21 +287,21 @@
                     <div class="card-content w-100 p-3">
                       <h4 class="card-head mb-2">PUBG MOBILE</h4>
                       <span>1M Playing &nbsp; 321k Love this game</span>
-                      <p class="card-description mt-2">
+                      <p class="card-description mt-2 fs-6">
                         PUBG is a game with the battle royale genre, where
                         players can play with 100 people online at once...
                       </p>
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-12 d-none d-md-block w-100 mt-3">
+                <div class="col-12 d-none d-md-block w-100 h-100 mt-3">
                   <div
                     class="
                       d-none
                       notification-advancement
                       d-md-flex
                       align-items-center
-                      justify-content-between
+                      justify-content-around
                       p-2
                     "
                   >
@@ -325,7 +313,7 @@
                           alt="logo.svg"
                         />
                       </div>
-                      <span class="notif-container ms-1 me-2">
+                      <div class="notif-container ms-1 me-2">
                         <div class="notif-title">
                           Claim your Achievment Game for Benifits exclusive!
                         </div>
@@ -333,18 +321,25 @@
                           Increase your Account by using special features and
                           promos from Achievment.
                         </div>
-                      </span>
+                      </div>
                     </div>
-
-                    <button
-                      class="claim-btn btn btn-primary px-md-2 px-lg-3 py-md-1"
-                    >
-                      Claim Now
-                    </button>
-
-                    <button class="btn btn-outline-light border-0">
-                      <i class="fas fa-times"></i>
-                    </button>
+                    <div>
+                      <button
+                        class="
+                          claim-btn
+                          btn btn-primary
+                          px-md-2 px-lg-3 px-xl-5
+                          py-md-1
+                        "
+                      >
+                        Claim Now
+                      </button>
+                    </div>
+                    <div>
+                      <button class="btn btn-outline-light border-0">
+                        <i class="fas fa-times"></i>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -461,7 +456,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="notification-menu mt-4 mb-4">
+                <div class="notification-menu mt-4 mb-4 h-100">
                   <div
                     class="
                       notification-menu-head
@@ -520,9 +515,7 @@
                         <a href="#"><i class="fas fa-ellipsis-h"></i></a>
                       </div>
                     </div>
-                    <button
-                      class="btn btn-secondary pt-0 pb-0 ps-3 pe-3 rounded-pill"
-                    >
+                    <button class="btn btn-fb pt-0 pb-0 ps-3 pe-3 rounded-pill">
                       Update
                     </button>
                   </div>

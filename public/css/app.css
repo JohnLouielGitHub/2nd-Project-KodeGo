@@ -242,6 +242,7 @@
   --bs-danger: #d62518;
   --bs-light: #f8f9fa;
   --bs-dark: #343a40;
+  --bs-fb: #64d7d7;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -3411,6 +3412,36 @@ textarea.form-control-lg {
   border-color: #343a40;
 }
 
+.btn-fb {
+  color: #000;
+  background-color: #64d7d7;
+  border-color: #64d7d7;
+}
+.btn-fb:hover {
+  color: #000;
+  background-color: #7bdddd;
+  border-color: #74dbdb;
+}
+.btn-check:focus + .btn-fb, .btn-fb:focus {
+  color: #000;
+  background-color: #7bdddd;
+  border-color: #74dbdb;
+  box-shadow: 0 0 0 0.25rem rgba(85, 183, 183, 0.5);
+}
+.btn-check:checked + .btn-fb, .btn-check:active + .btn-fb, .btn-fb:active, .btn-fb.active, .show > .btn-fb.dropdown-toggle {
+  color: #000;
+  background-color: #83dfdf;
+  border-color: #74dbdb;
+}
+.btn-check:checked + .btn-fb:focus, .btn-check:active + .btn-fb:focus, .btn-fb:active:focus, .btn-fb.active:focus, .show > .btn-fb.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(85, 183, 183, 0.5);
+}
+.btn-fb:disabled, .btn-fb.disabled {
+  color: #000;
+  background-color: #64d7d7;
+  border-color: #64d7d7;
+}
+
 .btn-outline-maroon {
   color: #701c1c;
   border-color: #701c1c;
@@ -3633,6 +3664,31 @@ textarea.form-control-lg {
 }
 .btn-outline-dark:disabled, .btn-outline-dark.disabled {
   color: #343a40;
+  background-color: transparent;
+}
+
+.btn-outline-fb {
+  color: #64d7d7;
+  border-color: #64d7d7;
+}
+.btn-outline-fb:hover {
+  color: #000;
+  background-color: #64d7d7;
+  border-color: #64d7d7;
+}
+.btn-check:focus + .btn-outline-fb, .btn-outline-fb:focus {
+  box-shadow: 0 0 0 0.25rem rgba(100, 215, 215, 0.5);
+}
+.btn-check:checked + .btn-outline-fb, .btn-check:active + .btn-outline-fb, .btn-outline-fb:active, .btn-outline-fb.active, .btn-outline-fb.dropdown-toggle.show {
+  color: #000;
+  background-color: #64d7d7;
+  border-color: #64d7d7;
+}
+.btn-check:checked + .btn-outline-fb:focus, .btn-check:active + .btn-outline-fb:focus, .btn-outline-fb:active:focus, .btn-outline-fb.active:focus, .btn-outline-fb.dropdown-toggle.show:focus {
+  box-shadow: 0 0 0 0.25rem rgba(100, 215, 215, 0.5);
+}
+.btn-outline-fb:disabled, .btn-outline-fb.disabled {
+  color: #64d7d7;
   background-color: transparent;
 }
 
@@ -5010,6 +5066,15 @@ textarea.form-control-lg {
   color: #191c1e;
 }
 
+.alert-fb {
+  color: #285656;
+  background-color: #e0f7f7;
+  border-color: #d1f3f3;
+}
+.alert-fb .alert-link {
+  color: #204545;
+}
+
 @-webkit-keyframes progress-bar-stripes {
   0% {
     background-position-x: 1rem;
@@ -5409,6 +5474,20 @@ textarea.form-control-lg {
   color: #fff;
   background-color: #1f2326;
   border-color: #1f2326;
+}
+
+.list-group-item-fb {
+  color: #285656;
+  background-color: #e0f7f7;
+}
+.list-group-item-fb.list-group-item-action:hover, .list-group-item-fb.list-group-item-action:focus {
+  color: #285656;
+  background-color: #cadede;
+}
+.list-group-item-fb.list-group-item-action.active {
+  color: #fff;
+  background-color: #285656;
+  border-color: #285656;
 }
 
 .btn-close {
@@ -6450,6 +6529,13 @@ textarea.form-control-lg {
   color: #2a2e33;
 }
 
+.link-fb {
+  color: #64d7d7;
+}
+.link-fb:hover, .link-fb:focus {
+  color: #83dfdf;
+}
+
 .ratio {
   position: relative;
   width: 100%;
@@ -6831,6 +6917,10 @@ textarea.form-control-lg {
 
 .border-dark {
   border-color: #343a40 !important;
+}
+
+.border-fb {
+  border-color: #64d7d7 !important;
 }
 
 .border-white {
@@ -7666,6 +7756,10 @@ textarea.form-control-lg {
   color: #343a40 !important;
 }
 
+.text-fb {
+  color: #64d7d7 !important;
+}
+
 .text-white {
   color: #fff !important;
 }
@@ -7724,6 +7818,10 @@ textarea.form-control-lg {
 
 .bg-dark {
   background-color: #343a40 !important;
+}
+
+.bg-fb {
+  background-color: #64d7d7 !important;
 }
 
 .bg-body {
@@ -11291,18 +11389,29 @@ input {
   right: 5% !important;
 }
 
+.video {
+  position: relative;
+}
+
+.featured-game {
+  bottom: 48px;
+  position: absolute;
+  background: #36363c9d;
+}
+
+.featured-game-title {
+  font-size: 18px;
+}
+
+.featured-game-desc {
+  font-size: 10px;
+}
+
 .video-player {
   min-height: 345px;
   max-height: 345px;
   background: #36363c;
   border-radius: 1rem;
-}
-
-.featured-game {
-  max-width: 400px;
-  top: 50px;
-  padding: 6px;
-  background-color: #2c2c2c5e;
 }
 
 .cards {
@@ -11317,13 +11426,15 @@ input {
 .card-image-1 {
   background-image: url(https://image.api.playstation.com/cdn/EP0001/CUSA11560_00/oErpzTMuDsXCGPqMbr11PTfTXhVSk8zX.png);
   background-size: cover;
-  min-height: 255px;
+  background-position: center center;
+  min-height: 300px;
 }
 
 .card-image-2 {
   background-image: url(https://akm-img-a-in.tosshub.com/sites/btmt/images/stories/pub_660_190121023424.jpg);
   background-size: cover;
-  min-height: 255px;
+  background-position: center center;
+  min-height: 300px;
 }
 
 .card-content {
@@ -11353,7 +11464,6 @@ input {
 
 .notif-container {
   max-width: 393px;
-  height: 37px;
 }
 
 .notif-title {
@@ -11374,7 +11484,19 @@ input {
   text-align: left;
 }
 
+.logo {
+  background-repeat: no-repeat;
+  background-position: center center;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 40px;
+}
+
 @media (min-width: 992px) {
+  .logo {
+    width: 60px;
+  }
+
   .notif-title {
     font-size: 14px;
     font-style: normal;
@@ -11393,15 +11515,6 @@ input {
     text-align: left;
   }
 }
-.logo {
-  background-repeat: no-repeat;
-  background-position: center center;
-  -o-object-fit: contain;
-     object-fit: contain;
-  width: 40px;
-  height: 45px;
-}
-
 .recent-games,
 .notification-menu,
 .game-preview {
